@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- Кодирование CodingNepal || www.codingnepalweb.com --> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Boxicons CSS --> <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /> <title>Боковая панель навигации в HTML CSS JavaScript</title> </head> <body> <!-- navbar --> <nav class="navbar"> <div class="logo_item"> <i class="bx bx-menu" id="sidebarOpen"></i> <img src="images/logo.png" alt=""></i>CodingNepal </div> <div class="search_bar"> <input type="text" placeholder="Search" /> </div> <div class="navbar_content"> <i class="bi bi-grid"></i> <i class='bx bx-sun' id="darkLight"></i> <i class='bx bx-bell' ></i> <img src="images/profile.jpg" alt="" class="profile" /> </div> </nav> <!-- боковая панель --> <nav class="sidebar"> <div class="menu_content"> <ul class="menu_items"> <div class="menu_title menu_dahsboard"></div> <!-- дублируйте или удалите этот тег li, если хотите добавить или удалить ссылку навигации с подменю --> <!-- начало --> <li class="item"> <div href="#" class="nav_link submenu_item"> <span class="navlink_icon"> <i class="bx bx-home-alt"></i> </span> <span class="navlink">Главная</span> <i class="bx bx-chevron-right arrow-left"></i> </div> <ul class="menu_items submenu"> <a href="https://youtu.be/Gp2ssOlryvs?si=acgvqlIdDz1uJItQ" class="nav_link sublink">Ссылка на вкладку навигации</a> <a href="https://youtu.be/Jn4e5HVzVcY?si=mSZAqLVdbRrWG395" class="nav_link sublink">Ссылка на вкладку навигацииcbv</a> <a href="#" class="nav_link sublink">Ссылка на вкладку навигации</a> <a href="#" class="nav_link sublink">Ссылка на вкладку навигации</a> </ul> </li> <!-- конец --> <!-- продублируйте этот тег li, если хотите добавить или удалить ссылку навигации с подменю --> <!-- начало --> <li class="item"> <div href="#" class="nav_link submenu_item"> <span class="navlink_icon"> <i class="bx bx-grid-alt"></i> </span> <span class="navlink">Обзор</span> <i class="bx bx-chevron-right arrow-left"></i> </div> <ul class="menu_items submenu"> <a href="#" class="nav_link sublink">Ссылка на подменю навигации</a> <a href="#" class="nav_link sublink">Ссылка на подменю навигации</a> <a href="#" class="nav_link sublink">Ссылка на подменю навигации</a> <a href="#" class="nav_link sublink">Ссылка на подменю навигации</a> <a href="#" class="nav_link sublink">Ссылка на подменю навигации</a> </ul> </li> <!-- конец --> </ul> <ul class="menu_items"> <div class="menu_title menu_editor"></div> <!-- продублируйте эти теги li, если хотите добавить или удалить только ссылку navlink --> <!-- Начало --> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bxs-magic-wand"></i> </span> <span class="navlink">Волшебная сборка</span> </a> </li> <!-- Конец --> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-loader-circle"></i> </span> <span class="navlink">Фильтры</span> </a> </li> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-filter"></i> </span> <span class="navlink">Фильтр</span> </a> </li> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-cloud-upload"></i> </span> <span class="navlink">Загрузить новый</span> </a> </li> </ul> <ul class="menu_items"> <div class="menu_title menu_setting"></div> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-flag"></i> </span> <span class="navlink">Доска объявлений</span> </a> </li> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-medal"></i> </span> <span class="navlink">Награда</span> </a> </li> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-cog"></i> </span> <span class="navlink">Настройка</span> </a> </li> <li class="item"> <a href="#" class="nav_link"> <span class="navlink_icon"> <i class="bx bx-layer"></i> </span> <span class="navlink">Возможности</span> </a> </li> </ul> <!-- Боковая панель Открыть / Закрыть --> <div class="bottom_content"> <div class="bottom expand_sidebar"> <span> Развернуть</span> <i class='bx bx-log-in'></i> </div> <div class="bottom collapse_sidebar"> <span> Свернуть</span> <i class='bx bx-log-out'></i> </div> </div> </div> </nav> <style>/* Импорт шрифта Google - Poppins */ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; } :root { --white-color: #fff; --blue-color: #4070f4; --grey-color: #707070; --grey-color-light: #aaa; } body { background-color: #e7f2fd; transition: all 0.5s ease; } body.dark { background-color: #333; } body.dark { --white-color: #333; --blue-color: #fff; --grey-color: #f2f2f2; --grey-color-light: #aaa; } /* навигационная панель */ .navbar { position: fixed; top: 0; width: 100%; left: 0; background-color: var(--white-color); display: flex; align-items: center; justify-content: space-between; padding: 15px 30px; z-index: 1000; box-shadow: 0 0 2px var(--grey-color-light); } .logo_item { display: flex; align-items: center; column-gap: 10px; font-size: 22px; font-weight: 500; color: var(--blue-color); } .navbar img { width: 35px; height: 35px; object-fit: cover; border-radius: 50%; } .search_bar { height: 47px; max-width: 430px; width: 100%; } .search_bar input { height: 100%; width: 100%; border-radius: 25px; font-size: 18px; outline: none; background-color: var(--white-color); color: var(--grey-color); border: 1px solid var(--grey-color-light); padding: 0 20px; } .navbar_content { display: flex; align-items: center; column-gap: 25px; } .navbar_content i { cursor: pointer; font-size: 20px; color: var(--grey-color); } /* боковая панель */ .sidebar { background-color: var(--white-color); width: 260px; position: fixed; top: 0; left: 0; height: 100%; padding: 80px 20px; z-index: 100; overflow-y: scroll; box-shadow: 0 0 1px var(--grey-color-light); transition: all 0.5s ease; } .sidebar.close { padding: 60px 0; width: 80px; } .sidebar::-webkit-scrollbar { display: none; } .menu_content { position: relative; } .menu_title { margin: 15px 0; padding: 0 20px; font-size: 18px; } .sidebar.close .menu_title { padding: 6px 30px; } .menu_title::before { color: var(--grey-color); white-space: nowrap; } .menu_dahsboard::before { content: "Панель инструментов"; } .menu_editor::before { content: "Редактор"; } .menu_setting::before { content: "Настройка"; } .sidebar.close .menu_title::before { content: ""; position: absolute; height: 2px; width: 18px; border-radius: 12px; background: var(--grey-color-light); } .menu_items { padding: 0; list-style: none; } .navlink_icon { position: relative; font-size: 22px; min-width: 50px; line-height: 40px; display: inline-block; text-align: center; border-radius: 6px; } .navlink_icon::before { content: ""; position: absolute; height: 100%; width: calc(100% + 100px); left: -20px; } .navlink_icon:hover { background: var(--blue-color); } .sidebar .nav_link { display: flex; align-items: center; width: 100%; padding: 4px 15px; border-radius: 8px; text-decoration: none; цвет: var(--grey-color); пробел: nowrap; } .sidebar.close .navlink { display: none; } .nav_link:hover { цвет: var(--white-color); фон: var(--blue-color); } .sidebar.close .nav_link:hover { фон: var(--white-color); } .submenu_item { курсор: указатель; } .submenu { display: none; } .submenu_item .arrow-left { позиция: абсолютная; справа: 10 пикселей; display: inline-block; margin-right: auto; } .sidebar.close .submenu { display: none; } .show_submenu ~ .submenu { display: block; } .show_submenu .arrow-left { transform: rotate(90deg); } .submenu .sublink { padding: 15px 15px 15px 52px; } .bottom_content { position: fixed; bottom: 60px; left: 0; width: 260px; cursor: pointer; transition: all 0.5s ease; } .bottom { position: absolute; display: flex; align-items: center; left: 0; justify-content: space-around; padding: 18px 0; text-align: center; width: 100%; color: var(--grey-color); border-top: 1px solid var(--grey-color-light); background-color: var(--white-color); } .bottom i { font-size: 20px; } .bottom span { font-size: 18px; } .sidebar.close .bottom_content { width:50px; left: 15px; } .sidebar.close .bottom span { display: none; } .sidebar.hoverable .collapse_sidebar { display: none; } #sidebarOpen { display: none; } @media screen and (max-width: 768px) { #sidebarOpen { font-size: 25px; display: block; margin-right: 10px; cursor: pointer; color: var(--grey-color); } .sidebar.close { left: -100%; } .search_bar { display: none; } .sidebar.close .bottom_content { left: -100%; } } </style> <script > const body = document.querySelector("body"); const darkLight = document.querySelector("#darkLight"); const sidebar = document.querySelector(".sidebar"); const submenuItems = document.querySelectorAll(".submenu_item"); const sidebarOpen = document.querySelector("#sidebarOpen"); const sidebarClose = document.querySelector(".collapse_sidebar"); const sidebarExpand = document.querySelector(".expand_sidebar"); sidebarOpen.addEventListener("click", () => sidebar.classList.toggle("close")); sidebarClose.addEventListener("click", () => { sidebar.classList.add("close", "hoverable"); }); sidebarExpand.addEventListener("click", () => { sidebar.classList.remove("close", "hoverable"); }); sidebar.addEventListener("mouseenter", () => { if (sidebar.classList.contains("hoverable")) { sidebar.classList.remove("close"); } }); sidebar.addEventListener("mouseleave", () => { if (sidebar.classList.contains("hoverable")) { sidebar.classList.add("close"); } }); darkLight.addEventListener("click", () => { body.classList.toggle("dark"); if (body.classList.contains("dark")) { document.setI; darkLight.classList.replace("bx-sun", "bx-moon"); } else { darkLight.classList.replace("bx-moon", "bx-sun"); } }); submenuItems.forEach((item, index) => { item.addEventListener("click", () => { item.classList.toggle("show_submenu"); submenuItems.forEach((item2, index2) => { if (index !== index2) { item2.classList.remove("show_submenu"); } }); }); }); if (window.innerWidth < 768) { sidebar.classList.add("close"); } else { sidebar.classList.remove("close");
+      }
+        </script>
+  </body>
+</html>
+
+
+саздавай путь к скачивание 
+из кодов создай .exe , .app ,  .ipa  для ios начиеая подержки из ios-11 version  файл для скачивание
+собери все файле в месте и создавай пути к файлов и пиши по шагам как собирает файлы без ошибок  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Шаг 1: Организуйте свои файлы
+Во-первых, убедитесь, что все ваши файлы кода и ресурсы (например, изображения, CSS, JS-файлы) правильно организованы в структуру папок. Например, ваш проект может выглядеть так:
+
+Баш
+
+Копировать код
+/YourProject
+    /index.html
+    /styles.css
+    /scripts.js
+    /images
+        logo.png
+        profile.jpg
+    /assets
+        (any other assets)
+Все ваши ресурсы (изображения, скрипты и стили) должны быть размещены в соответствующих папках.
+
+Шаг 2: Преобразование HTML в настольное приложение
+Для создания исполняемого приложения вам необходимо использовать инструмент, который может упаковать веб-технологии (HTML, CSS, JavaScript) в отдельный исполняемый файл. Популярным инструментом для этого является Electron .
+
+Шаг 3: Установка Electron
+Установка Node.js : Сначала вам нужно установить Node.js на вашем компьютере. Вы можете скачать и установить его здесь .
+
+Инициализация проекта Node.js : в папке проекта ( YourProject) откройте терминал или командную строку и выполните следующие команды для инициализации проекта Node.js:
+
+Баш
+
+Копировать код
+npm init -y
+Это создаст package.jsonфайл в каталоге вашего проекта.
+
+Установите Electron : В том же каталоге установите Electron, выполнив:
+
+Баш
+
+Копировать код
+npm install electron --save-dev
+Создать Electron Основной процесс : Вам нужно создать файл для загрузки вашего HTML-файла в Electron. Создайте новый файл в каталоге вашего проекта с именем main.js:
+
+яваскрипт
+
+Копировать код
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
+
+let win;
+
+function createWindow() {
+    win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true
+        }
+    });
+
+    win.loadFile(path.join(__dirname, 'index.html')); // Load your HTML file
+}
+
+app.whenReady().then(createWindow);
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+});
+Обновлениеpackage.json : Откройте package.jsonфайл и измените его, чтобы добавить команду запуска Electron. В разделе "scripts"добавьте следующее:
+
+json
+
+Копировать код
+"scripts": {
+    "start": "electron ."
+}
+Шаг 4: Запустите Electron локально
+Теперь вы можете запустить приложение Electron локально, чтобы протестировать его:
+
+Откройте терминал или командную строку.
+
+Перейдите в каталог вашего проекта и запустите:
+
+Баш
+
+Копировать код
+npm start
+Должно открыться окно Electron, отображающее ваш HTML-контент.
+
+Шаг 5: Создание исполняемого файла
+Для создания отдельного файла .exe(Windows) или .app(Mac) можно использовать Electron Packager или Electron Builder.
+
+Установите Electron Packager : выполните эту команду в папке проекта, чтобы установить Electron Packager:
+
+Баш
+
+Копировать код
+npm install electron-packager --save-dev
+Соберите исполняемый файл : После установки Electron Packager вы можете собрать исполняемый файл, выполнив:
+
+Баш
+
+Копировать код
+npx electron-packager . YourAppName --platform=win32 --arch=x64
+Это создаст YourAppName-win32-x64папку, содержащую .exeфайл. Для macOS вы можете заменить win32на , darwinчтобы сгенерировать .appфайл.
+
+Распространяйте свое приложение : на выходе получится папка с исполняемым файлом внутри. Вы можете заархивировать эту папку или упаковать ее для распространения.
+
+Шаг 6: Сделайте файлы доступными для загрузки
+Создайте ссылку для скачивания : вы можете загрузить .exeфайл .appна свой веб-сервер или использовать облачное хранилище (например, Google Drive, Dropbox или AWS S3).
+Предоставьте ссылку пользователям : разместите ссылку на скачивание на своем веб-сайте или отправьте ее напрямую своим пользователям.
